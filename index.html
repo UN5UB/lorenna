@@ -17,7 +17,29 @@
 <body class="main__body">
     <div class="wrapper">
         <!-- Header -->
-        @@include('./html/_header.html')
+        <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="header__logo logo"><a href="index.html"> <img src="./img/logo.svg" alt="logo"></a></div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-goto=".section__cards">Car</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Become Partner</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Terms & Conditions</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-goto=".section__contacts">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
         <!-- Main Page -->
         <main>
             <img class="hero__background" src="./img/Background Home.png" alt="map">
@@ -398,7 +420,60 @@
         </section>
         </main>
         <!-- Footer -->
-        @@include('./html/_footer.html')
+        <footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__main-block main-footer-block">
+                <div class="main-footer-block__logo logo"><a href="index.html"> <img src="./img/logo.svg" alt="logo"></a></div>
+                <p class="main-footer-block__text">We are a well-known car rental service that has many partners in each region to connect with you to assist in your trip in meetings, events, holidays or long trips.</p>
+                <div class="footer__socials socials-block">
+                    <a target="_blank" href="https://www.linkedin.com/" class="socials-block__link"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://twitter.com/" class="socials-block__link"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/" class="socials-block__link"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/" class="socials-block__link"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer__secondary-block secondary-footer-block">
+                <div class="secondary-footer-block__column column-item">
+                    <h3 class="column-item__title">Company</h3>
+                    <ul class="column-item__list">
+                        <li class="column-item__nav"><a href="#" class="column-item__link">About Us</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Services</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Cars</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Our Partner</a></li>
+                    </ul>
+                </div>
+                <div class="secondary-footer-block__column column-item">
+                    <h3 class="column-item__title">Services</h3>
+                    <ul class="column-item__list">
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Instant Rent</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Private Driver</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Long Trip</a></li>
+                    </ul>
+                </div>
+                <div class="secondary-footer-block__column column-item">
+                    <h3 class="column-item__title">Support</h3>
+                    <ul class="column-item__list">
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Blog</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">FAQ</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Call Center</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Partner With Us</a></li>
+                        <li class="column-item__nav"><a href="#" class="column-item__link">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="footer-swipe swipe" href="#"><svg class="footer-swipe__img" width="16" height="17" viewBox="0 0 16 17" fill="#F55757" xmlns="http://www.w3.org/2000/svg">
+            <path class="footer-swipe__path" d="M1 8L8 15L15 8" stroke="white" stroke-width="2" />
+            <path class="footer-swipe__path" d="M4 1L8.5 5L13 1" stroke="white" stroke-width="2" />
+        </svg>
+</a>
+    </div>
+</footer>
     </div>
 </body>
 
